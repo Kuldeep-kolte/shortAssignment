@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a7f6d17920.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 15%;
+            width: 100%;
+            align-items: center;
+        }
+
+        .div {
+            height: 300px;
+            width: 300px;
+            text-transform: uppercase;
+            transition: width 1s;
+            color: white;
+            padding: 20px;
+            background-size: cover;
+        }
+
+        .div:hover {
+            width: 400px;
+        }
+
+        .div1 {
+            background-image: url(b.jpg);
+            border-radius: 15px 0px 0px 15px;
+        }
+        .div1:hover{
+            transform: scaleX(50px);
+        }
+        .div2 {
+            background-image: url(c.jpg);
+
+        }
+        .div2:hover{
+            transform: scaleX(100px);
+        }
+
+        .div3 {
+            background-image: url(e.jpg);
+            border-radius: 0px 15px 15px 0px;
+        }
+        i{
+            margin-left: 180px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="div1 div">strength <i class="fa-solid fa-circle-chevron-right"></i></div>
+        <div class="div2 div">mobility <i class="fa-solid fa-circle-chevron-right"></i></div>
+        <div class="div3 div">drills <i class="fa-solid fa-circle-chevron-right"></i></div>
+    </div>
+</body>
+
+</html>
